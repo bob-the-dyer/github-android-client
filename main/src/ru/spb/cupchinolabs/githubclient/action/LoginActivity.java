@@ -1,6 +1,8 @@
 package ru.spb.cupchinolabs.githubclient.action;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -58,7 +60,15 @@ public class LoginActivity extends Activity {
             GitHub.populateRepoListForUser(user);
             startActivity(intent);
         } else {
-            // TODO alert error on authenticate and stay on this activity
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setPositiveButton(R.string.login_errordialog_ok, new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+                    // User clicked OK button
+                }
+            });
+            builder.setMessage(getString(R.string.login_auth_failed_message));
+            AlertDialog dialog = builder.create();
+            dialog.show();
         }
     }
 

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="title_loginactivity">GitHub Client</string>
-    <string name="login_greeting">Please enter your login and password</string>
-    <string name="login_name_hint">Login</string>
+    <string name="login_greeting">Please enter your user name and password</string>
+    <string name="login_name_hint">User name</string>
     <string name="login_button_name">Login</string>
     <string name="login_password_hint">Password</string>
     <string name="title_repolistactivity">List of repositories</string>
+    <string name="login_errordialog_ok">OK</string>
+    <string name="login_auth_failed_message">Authentication failed. Fix user name or password and try again.</string>
 </resources>

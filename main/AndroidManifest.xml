@@ -4,6 +4,10 @@
           android:versionCode="1"
           android:versionName="1.0">
     <uses-sdk android:minSdkVersion="10"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application android:label="@string/title_loginactivity">
         <activity android:name=".action.LoginActivity"
                   android:label="@string/title_loginactivity">
@@ -16,4 +20,4 @@
                   android:label="@string/title_repolistactivity">
         </activity>
     </application>
-</manifest> 
+</manifest>
