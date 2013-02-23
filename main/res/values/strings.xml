@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">GitHub Client</string>
+    <string name="title_loginactivity">GitHub Client</string>
+    <string name="login_greeting">Please enter your login and password</string>
+    <string name="login_name_hint">Login</string>
+    <string name="login_button_name">Login</string>
+    <string name="login_password_hint">Password</string>
+    <string name="title_repolistactivity">List of repositories</string>
 </resources>

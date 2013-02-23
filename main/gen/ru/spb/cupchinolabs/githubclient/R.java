@@ -10,10 +10,20 @@ package ru.spb.cupchinolabs.githubclient;
 public final class R {
     public static final class attr {
     }
+    public static final class id {
+        public static final int login_name=0x7f040000;
+        public static final int login_password=0x7f040001;
+    }
     public static final class layout {
-        public static final int main=0x7f020000;
+        public static final int login=0x7f020000;
+        public static final int repolist=0x7f020001;
     }
     public static final class string {
-        public static final int app_name=0x7f030000;
+        public static final int login_button_name=0x7f030003;
+        public static final int login_greeting=0x7f030001;
+        public static final int login_name_hint=0x7f030002;
+        public static final int login_password_hint=0x7f030004;
+        public static final int title_loginactivity=0x7f030000;
+        public static final int title_repolistactivity=0x7f030005;
     }
 }
