@@ -12,7 +12,7 @@ import java.util.List;
  * Date: 23.02.13
  * Time: 15:49
   */
-public class GitHub {
+public class GitHubEmulator {
 
     public static boolean authenticate(User user) {
         return true;

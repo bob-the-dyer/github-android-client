@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import ru.spb.cupchinolabs.githubclient.ApplicationContext;
-import ru.spb.cupchinolabs.githubclient.GitHub;
+import ru.spb.cupchinolabs.githubclient.GitHubEmulator;
 import ru.spb.cupchinolabs.githubclient.R;
 import ru.spb.cupchinolabs.githubclient.model.User;
 
@@ -55,9 +55,9 @@ public class LoginActivity extends Activity {
 //        intent.putExtra(LOGIN_PASSWORD, password);
 
         User user = new User(name, password);
-        if (GitHub.authenticate(user)){
+        if (GitHubEmulator.authenticate(user)){
             ApplicationContext.getInstance().setUser(user);
-            GitHub.populateRepoListForUser(user);
+            GitHubEmulator.populateRepoListForUser(user);
             startActivity(intent);
         } else {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
