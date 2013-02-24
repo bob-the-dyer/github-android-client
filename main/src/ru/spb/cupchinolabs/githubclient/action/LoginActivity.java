@@ -2,8 +2,11 @@ package ru.spb.cupchinolabs.githubclient.action;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
 import ru.spb.cupchinolabs.githubclient.ApplicationContext;
@@ -38,6 +41,23 @@ public class LoginActivity extends Activity {
         // TODO check the network availability
         // otherwise reate a dialog here that requests the user to enable wifi or 3g
         //
+
+        ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+        if (networkInfo != null && networkInfo.isConnected()) {
+            // fetch data
+        } else {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setPositiveButton(R.string.login_errordialog_ok, new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+                    finish();
+                }
+            });
+            builder.setMessage(getString(R.string.login_network_unavailable));
+            AlertDialog dialog = builder.create();
+            dialog.show();
+        }
+
     }
 
     public void login(View view) {
