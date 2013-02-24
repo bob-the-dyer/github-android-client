@@ -7,12 +7,17 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import ru.spb.cupchinolabs.githubclient.ApplicationContext;
 import ru.spb.cupchinolabs.githubclient.GitHubEmulator;
 import ru.spb.cupchinolabs.githubclient.R;
 import ru.spb.cupchinolabs.githubclient.model.User;
+
+import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 public class LoginActivity extends Activity {
 
@@ -38,14 +43,11 @@ public class LoginActivity extends Activity {
     @Override
     protected void onStart() {
         super.onStart();
-        // TODO check the network availability
-        // otherwise reate a dialog here that requests the user to enable wifi or 3g
-        //
 
         ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
         if (networkInfo != null && networkInfo.isConnected()) {
-            // fetch data
+            new GitHubPingAsyncTask().execute();
         } else {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setPositiveButton(R.string.login_errordialog_ok, new DialogInterface.OnClickListener() {
@@ -57,7 +59,6 @@ public class LoginActivity extends Activity {
             AlertDialog dialog = builder.create();
             dialog.show();
         }
-
     }
 
     public void login(View view) {
@@ -68,7 +69,7 @@ public class LoginActivity extends Activity {
         String name = findViewById(R.id.login_name).toString();
         String password = findViewById(R.id.login_password).toString();
 
-        //TODO validate name and password: non-empty
+        //TODO validate name and password: non-empty or if empty button should be disabled
 
         User user = new User(name, password);
 
@@ -94,4 +95,48 @@ public class LoginActivity extends Activity {
         }
     }
 
+    private class GitHubPingAsyncTask extends AsyncTask<String, String, String> {
+        @Override
+        protected String doInBackground(String... objects) {
+            try {
+                URL url = new URL("https://api.github.com/");
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                conn.setReadTimeout(10000);
+                conn.setConnectTimeout(15000);
+                conn.setRequestMethod("GET");
+                conn.setDoInput(true);
+                conn.connect();
+                int response = conn.getResponseCode();
+                System.out.println("The response is: " + response);
+                InputStream is = conn.getInputStream();
+                System.out.println(readIt(is, 500));
+                return null;
+            } catch (IOException e) {
+                e.printStackTrace();
+                return e.getMessage();
+            }
+        }
+
+        // Reads an InputStream and converts it to a String.
+        public String readIt(InputStream stream, int len) throws IOException {
+            Reader reader = new InputStreamReader(stream, "UTF-8");
+            char[] buffer = new char[len];
+            reader.read(buffer);
+            return new String(buffer);
+        }
+
+        @Override
+        protected void onPostExecute(String errorMessage) {
+            if (errorMessage != null){
+                AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                builder.setPositiveButton(R.string.login_errordialog_ok, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                    }
+                });
+                builder.setMessage(LoginActivity.this.getString(R.string.login_github_unavailable) + "\n" + errorMessage);
+                AlertDialog dialog = builder.create();
+                dialog.show();
+            }
+        }
+    }
 }

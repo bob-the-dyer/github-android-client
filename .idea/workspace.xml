@@ -3,17 +3,16 @@
   <component name="AndroidLayoutPreviewToolWindow">
     <option name="state">
       <GlobalState>
-        <option name="device" value="2.7in QVGA" />
+        <option name="device" value="One" />
         <option name="dockMode" value="" />
-        <option name="nightMode" value="notnight" />
+        <option name="nightMode" value="night" />
         <option name="targetHashString" value="android-10" />
         <option name="theme" value="Theme" />
-        <option name="visible" value="false" />
       </GlobalState>
     </option>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="System.out" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3460d66c-7665-4953-9e62-fe3364911ae9" name="Default" comment="">
@@ -78,19 +77,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LoginActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="LoginActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="61" selection-start="1850" selection-end="1850" vertical-scroll-proportion="0.0">
+            <state line="49" column="26" selection-start="1650" selection-end="1660" vertical-scroll-proportion="-0.77024794">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1842#2013#0" expanded="true" />
+                <element signature="e#1998#1999#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AsyncTask.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/android/os/AsyncTask.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="62" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DialogInterface.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/android/content/DialogInterface.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="28" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="176" selection-start="778" selection-end="778" vertical-scroll-proportion="0.28716215">
+            <state line="11" column="99" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -99,7 +120,7 @@
       <file leaf-file-name="R.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/gen/ru/spb/cupchinolabs/githubclient/R.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="32" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0">
+            <state line="24" column="32" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,7 +129,7 @@
       <file leaf-file-name="login.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/res/layout/login.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="14" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0">
+            <state line="15" column="81" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -130,7 +151,7 @@
       <file leaf-file-name="repolist.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/res/layout/repolist.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0">
+            <state line="12" column="23" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -140,24 +161,6 @@
         <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/GitHubEmulator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="14" column="19" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Repository.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/model/Repository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="52" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="882" selection-end="882" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -199,8 +202,8 @@
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/GitHubEmulator.java" />
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/RepoListActivity.java" />
         <option value="$PROJECT_DIR$/main/res/layout/repolist.xml" />
-        <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/LoginActivity.java" />
         <option value="$PROJECT_DIR$/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/LoginActivity.java" />
       </list>
     </option>
   </component>
@@ -638,7 +641,11 @@
       <created>1361702289879</created>
       <updated>1361702289879</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="adding network detection on app start">
+      <created>1361703053230</created>
+      <updated>1361703053230</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -647,7 +654,7 @@
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32291666" sideWeight="0.69536424" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23529412" sideWeight="0.69536424" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955848" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -661,7 +668,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16829865" sideWeight="0.69536424" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249694" sideWeight="0.69536424" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30463576" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30463576" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -707,7 +714,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="reworked repoList from GridView to ListView" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding network detection on app start" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -726,6 +733,7 @@
     <MESSAGE value=" - added a support lib&#10; - filling test data&#10; - UI changes" />
     <MESSAGE value="building a GridView for repolist" />
     <MESSAGE value="reworked repoList from GridView to ListView" />
+    <MESSAGE value="adding network detection on app start" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -735,21 +743,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/ant.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/project.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -758,11 +751,6 @@
     <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="0" selection-start="882" selection-end="882" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="81" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/android/app/Activity.class">
@@ -786,13 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/res/layout/login.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="14" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/GitHubEmulator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="19" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
@@ -811,31 +792,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/java/util/Observable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/res/layout/login.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="81" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main/res/layout/repolist.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/gen/ru/spb/cupchinolabs/githubclient/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="32" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="61" selection-start="1850" selection-end="1850" vertical-scroll-proportion="0.0">
+        <state line="12" column="23" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="176" selection-start="778" selection-end="778" vertical-scroll-proportion="0.28716215">
+        <state line="11" column="99" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/gen/ru/spb/cupchinolabs/githubclient/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="32" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="81" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/android/content/DialogInterface.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="28" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/android/os/AsyncTask.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="62" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="26" selection-start="1650" selection-end="1660" vertical-scroll-proportion="-0.77024794">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1842#2013#0" expanded="true" />
+            <element signature="e#1998#1999#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
