@@ -50,14 +50,16 @@ public class LoginActivity extends Activity {
 
         //TODO validate name and password: non-empty
 
-        Intent intent = new Intent(this, RepoListActivity.class);
-//        intent.putExtra(LOGIN_NAME, name);
-//        intent.putExtra(LOGIN_PASSWORD, password);
-
         User user = new User(name, password);
-        if (GitHubEmulator.authenticate(user)){
+
+        //TODO progress bar on
+        boolean authenticationPassed = GitHubEmulator.authenticate(user);
+        //TODO progress bar off
+
+        if (authenticationPassed){
             ApplicationContext.getInstance().setUser(user);
             GitHubEmulator.populateRepoListForUser(user);
+            Intent intent = new Intent(this, RepoListActivity.class);
             startActivity(intent);
         } else {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);

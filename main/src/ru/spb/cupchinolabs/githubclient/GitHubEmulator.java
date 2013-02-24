@@ -25,7 +25,7 @@ public class GitHubEmulator {
 
     private static List<Repository> getRepoListForUser(User user) {
         List<Repository> repoList = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 15; i++) {
             Repository repository = new Repository();
             repository.setName("repo_name" + i);
             repository.setDescription("repo_description_short" + i);
