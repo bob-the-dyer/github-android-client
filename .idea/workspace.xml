@@ -15,7 +15,9 @@
     <option name="TOOL_WINDOW_CUSTOM_FILTER" value="System.out" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3460d66c-7665-4953-9e62-fe3364911ae9" name="Default" comment="">
+    <list default="true" id="3460d66c-7665-4953-9e62-fe3364911ae9" name="Default" comment="GitHub Ping on app start">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubPingAsyncTask.java" />
+      <change type="MOVED" beforePath="C:\Users\VladimirK\IdeaProjects\github-android-client\main\src\ru\spb\cupchinolabs\githubclient\GitHubEmulator.java" afterPath="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubEmulator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/gen/ru/spb/cupchinolabs/githubclient/R.java" afterPath="$PROJECT_DIR$/main/gen/ru/spb/cupchinolabs/githubclient/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/main/res/values/strings.xml" />
@@ -77,14 +79,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LoginActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LoginActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="26" selection-start="1650" selection-end="1660" vertical-scroll-proportion="-0.77024794">
+            <state line="86" column="79" selection-start="3193" selection-end="3217" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1842#2013#0" expanded="true" />
-                <element signature="e#1998#1999#0" expanded="true" />
+                <element signature="e#1817#1988#0" expanded="true" />
+                <element signature="e#1973#1974#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GitHubEmulator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubEmulator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="26" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GitHubPingAsyncTask.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubPingAsyncTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="32" selection-start="416" selection-end="435" vertical-scroll-proportion="0.13473053">
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,7 +133,7 @@
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="99" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0">
+            <state line="11" column="51" selection-start="866" selection-end="866" vertical-scroll-proportion="-7.48">
               <folding />
             </state>
           </provider>
@@ -120,7 +142,7 @@
       <file leaf-file-name="R.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/gen/ru/spb/cupchinolabs/githubclient/R.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="32" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0">
+            <state line="21" column="32" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -135,32 +157,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RepoListActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/RepoListActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="93" selection-start="763" selection-end="848" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1132#1384#0" expanded="true" />
-                <element signature="e#1373#1374#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="repolist.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/res/layout/repolist.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="12" column="23" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GitHubEmulator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/GitHubEmulator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="19" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -188,7 +188,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/LoginActivity.java" />
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/actions/LoginActivity.java" />
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/model/Commit.java" />
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/Context.java" />
@@ -202,8 +201,9 @@
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/GitHubEmulator.java" />
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/RepoListActivity.java" />
         <option value="$PROJECT_DIR$/main/res/layout/repolist.xml" />
-        <option value="$PROJECT_DIR$/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubPingAsyncTask.java" />
       </list>
     </option>
   </component>
@@ -294,6 +294,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="github-android-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="githubclient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="github" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -645,7 +667,11 @@
       <created>1361703053230</created>
       <updated>1361703053230</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="GitHub Ping on app start">
+      <created>1361707590604</created>
+      <updated>1361707590604</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -666,9 +692,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16829865" sideWeight="0.69536424" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16829865" sideWeight="0.7649007" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249694" sideWeight="0.69536424" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30463576" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23509933" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -714,7 +740,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding network detection on app start" />
+    <option name="LAST_COMMIT_MESSAGE" value="GitHub Ping on app start" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -734,6 +760,7 @@
     <MESSAGE value="building a GridView for repolist" />
     <MESSAGE value="reworked repoList from GridView to ListView" />
     <MESSAGE value="adding network detection on app start" />
+    <MESSAGE value="GitHub Ping on app start" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -743,11 +770,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main/project.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="0" selection-start="882" selection-end="882" vertical-scroll-proportion="0.0" />
@@ -770,13 +792,6 @@
     <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/android/database/Cursor.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="17" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/GitHubEmulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="19" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -813,20 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="99" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/gen/ru/spb/cupchinolabs/githubclient/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="32" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="81" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0" />
@@ -846,13 +847,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main/gen/ru/spb/cupchinolabs/githubclient/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="32" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="26" selection-start="1650" selection-end="1660" vertical-scroll-proportion="-0.77024794">
+        <state line="86" column="79" selection-start="3193" selection-end="3217" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1842#2013#0" expanded="true" />
-            <element signature="e#1998#1999#0" expanded="true" />
+            <element signature="e#1817#1988#0" expanded="true" />
+            <element signature="e#1973#1974#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="51" selection-start="866" selection-end="866" vertical-scroll-proportion="-7.48">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubEmulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="26" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubPingAsyncTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="32" selection-start="416" selection-end="435" vertical-scroll-proportion="0.13473053">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

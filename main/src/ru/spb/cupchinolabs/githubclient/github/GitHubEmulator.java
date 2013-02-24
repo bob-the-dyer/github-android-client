@@ -1,4 +1,4 @@
-package ru.spb.cupchinolabs.githubclient;
+package ru.spb.cupchinolabs.githubclient.github;
 
 import ru.spb.cupchinolabs.githubclient.model.Repository;
 import ru.spb.cupchinolabs.githubclient.model.User;

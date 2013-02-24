@@ -22,6 +22,7 @@ public final class R {
         public static final int login_auth_failed_message=0x7f030007;
         public static final int login_button_name=0x7f030003;
         public static final int login_errordialog_ok=0x7f030006;
+        public static final int login_github_autherntication_error=0x7f03000a;
         public static final int login_github_unavailable=0x7f030009;
         public static final int login_greeting=0x7f030001;
         public static final int login_name_hint=0x7f030002;
