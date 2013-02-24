@@ -12,16 +12,18 @@
     </option>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="System.out" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="ru.spb.cupchinolabs" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3460d66c-7665-4953-9e62-fe3364911ae9" name="Default" comment="GitHub Ping on app start">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubPingAsyncTask.java" />
-      <change type="MOVED" beforePath="C:\Users\VladimirK\IdeaProjects\github-android-client\main\src\ru\spb\cupchinolabs\githubclient\GitHubEmulator.java" afterPath="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubEmulator.java" />
+    <list default="true" id="3460d66c-7665-4953-9e62-fe3364911ae9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthenticateAsyncTask.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/gen/ru/spb/cupchinolabs/githubclient/R.java" afterPath="$PROJECT_DIR$/main/gen/ru/spb/cupchinolabs/githubclient/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/LoginActivity.java" afterPath="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/LoginActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/RepoListActivity.java" afterPath="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/RepoListActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubPingAsyncTask.java" afterPath="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubPingAsyncTask.java" />
     </list>
     <ignored path="github-android-client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,6 +41,60 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthenticateAsyncTask.java" line="40" class="ru.spb.cupchinolabs.githubclient.github.GitHubAuthenticateAsyncTask" package="ru.spb.cupchinolabs.githubclient.github">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthenticateAsyncTask.java" line="55" class="ru.spb.cupchinolabs.githubclient.github.GitHubAuthenticateAsyncTask" package="ru.spb.cupchinolabs.githubclient.github">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthenticateAsyncTask.java" line="42" class="ru.spb.cupchinolabs.githubclient.github.GitHubAuthenticateAsyncTask" package="ru.spb.cupchinolabs.githubclient.github">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthenticateAsyncTask.java" line="36" class="ru.spb.cupchinolabs.githubclient.github.GitHubAuthenticateAsyncTask" package="ru.spb.cupchinolabs.githubclient.github">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -82,12 +138,44 @@
       <file leaf-file-name="LoginActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="79" selection-start="3193" selection-end="3217" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1817#1988#0" expanded="true" />
-                <element signature="e#1973#1974#0" expanded="true" />
-              </folding>
+            <state line="74" column="34" selection-start="2796" selection-end="2796" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/res/layout/login.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RepoListActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/RepoListActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="0" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GitHubAuthenticateAsyncTask.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthenticateAsyncTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="61" column="13" selection-start="2228" selection-end="2228" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationContext.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/ApplicationContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="44" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,36 +192,7 @@
       <file leaf-file-name="GitHubPingAsyncTask.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubPingAsyncTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="32" selection-start="416" selection-end="435" vertical-scroll-proportion="0.13473053">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AsyncTask.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/android/os/AsyncTask.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="62" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DialogInterface.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/android/content/DialogInterface.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="28" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="51" selection-start="866" selection-end="866" vertical-scroll-proportion="-7.48">
+            <state line="37" column="46" selection-start="1113" selection-end="1113" vertical-scroll-proportion="1.0185951">
               <folding />
             </state>
           </provider>
@@ -142,16 +201,7 @@
       <file leaf-file-name="R.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/gen/ru/spb/cupchinolabs/githubclient/R.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="32" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/res/layout/login.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="81" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
+            <state line="20" column="32" selection-start="626" selection-end="626" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -188,7 +238,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/actions/LoginActivity.java" />
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/model/Commit.java" />
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/Context.java" />
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/model/User.java" />
@@ -197,21 +246,22 @@
         <option value="$PROJECT_DIR$/main/gen/ru/spb/cupchinolabs/githubclient/R.java" />
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/RepoListAdapter.java" />
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/model/Repository.java" />
-        <option value="$PROJECT_DIR$/main/res/layout/login.xml" />
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/GitHubEmulator.java" />
-        <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/RepoListActivity.java" />
         <option value="$PROJECT_DIR$/main/res/layout/repolist.xml" />
-        <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/LoginActivity.java" />
         <option value="$PROJECT_DIR$/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubPingAsyncTask.java" />
+        <option value="$PROJECT_DIR$/main/res/layout/login.xml" />
+        <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthenticateAsyncTask.java" />
+        <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/RepoListActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1688" />
-    <option name="y" value="-290" />
-    <option name="width" value="1696" />
-    <option name="height" value="1066" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1378" />
+    <option name="height" value="780" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -239,6 +289,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -411,16 +471,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -429,7 +479,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="githubclient" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -455,11 +505,12 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="GoToClass.includeLibraries" value="false" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.spb.cupchinolabs.githubclient.github" />
       <recent name="ru.spb.cupchinolabs.githubclient.action" />
       <recent name="ru.spb.cupchinolabs.githubclient" />
       <recent name="ru.spb.cupchinolabs.githubclient.model" />
@@ -671,35 +722,39 @@
       <created>1361707590604</created>
       <updated>1361707590604</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="GitHubPingAsyncTask was extracted + refactored">
+      <created>1361720282089</created>
+      <updated>1361720282089</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1688" y="-290" width="1696" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1378" height="780" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23529412" sideWeight="0.69536424" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23515981" sideWeight="0.61612904" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955848" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38387096" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32419354" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16829865" sideWeight="0.7649007" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249694" sideWeight="0.69536424" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23509933" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20668693" sideWeight="0.8532258" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14677419" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3090909" sideWeight="0.4198718" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -740,7 +795,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="GitHub Ping on app start" />
+    <option name="LAST_COMMIT_MESSAGE" value="GitHubPingAsyncTask was extracted + refactored" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -761,6 +816,7 @@
     <MESSAGE value="reworked repoList from GridView to ListView" />
     <MESSAGE value="adding network detection on app start" />
     <MESSAGE value="GitHub Ping on app start" />
+    <MESSAGE value="GitHubPingAsyncTask was extracted + refactored" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -770,62 +826,39 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="882" selection-end="882" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/android/app/Activity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="19" selection-start="2434" selection-end="2434" vertical-scroll-proportion="0.3320158">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/model/Repository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="52" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/android/database/Cursor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/RepoListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="93" selection-start="763" selection-end="848" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1132#1384#0" expanded="true" />
-            <element signature="e#1373#1374#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/java/util/Observable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="13" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/res/layout/login.xml">
+    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/android/content/DialogInterface.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="81" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="27" column="28" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/android/os/AsyncTask.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="62" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/org/json/JSONTokener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="146" selection-end="146" vertical-scroll-proportion="0.10493827" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="51" selection-start="858" selection-end="858" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/gen/ru/spb/cupchinolabs/githubclient/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="32" selection-start="626" selection-end="626" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/res/layout/repolist.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="23" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="12" column="23" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/AndroidManifest.xml">
@@ -833,58 +866,57 @@
         <state line="16" column="81" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/android/content/DialogInterface.class">
+    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/java/net/URL.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="28" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
+        <state line="7" column="11" selection-start="206" selection-end="206" vertical-scroll-proportion="0.18149467">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/android/os/AsyncTask.class">
+    <entry file="file://$PROJECT_DIR$/main/res/layout/login.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="62" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/gen/ru/spb/cupchinolabs/githubclient/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="32" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="79" selection-start="3193" selection-end="3217" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1817#1988#0" expanded="true" />
-            <element signature="e#1973#1974#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="51" selection-start="866" selection-end="866" vertical-scroll-proportion="-7.48">
+        <state line="20" column="0" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubEmulator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="26" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
+        <state line="16" column="26" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/ApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="44" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="34" selection-start="2796" selection-end="2796" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthenticateAsyncTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="13" selection-start="2228" selection-end="2228" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/RepoListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubPingAsyncTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="32" selection-start="416" selection-end="435" vertical-scroll-proportion="0.13473053">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="37" column="46" selection-start="1113" selection-end="1113" vertical-scroll-proportion="1.0185951">
+          <folding />
         </state>
       </provider>
     </entry>

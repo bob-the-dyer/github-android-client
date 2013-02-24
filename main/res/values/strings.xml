@@ -7,8 +7,7 @@
     <string name="login_password_hint">Password</string>
     <string name="title_repolistactivity">List of repositories</string>
     <string name="login_errordialog_ok">OK</string>
-    <string name="login_auth_failed_message">Authentication failed. Fix user name or password and try again.</string>
     <string name="login_network_unavailable">Network is currently unavailable. Please check whether Wi-Fi or mobile data access are enabled in device\'s Settings and try again. Application will now exit.</string>
     <string name="login_github_unavailable">GitHub is currently unavailable. Please try again later.</string>
-    <string name="login_github_autherntication_error">User name or password are incorrect, please check and try again.</string>
+    <string name="login_github_autherntication_error">Authentication failed. Fix user name or password and try again.</string>
 </resources>

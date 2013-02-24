@@ -9,7 +9,6 @@ import android.widget.Toast;
 import ru.spb.cupchinolabs.githubclient.ApplicationContext;
 import ru.spb.cupchinolabs.githubclient.model.Repository;
 
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -39,7 +38,6 @@ public class RepoListActivity extends ListActivity {
                 Toast.makeText(RepoListActivity.this, "" + position, Toast.LENGTH_SHORT).show();
             }
         });
-
     }
 
     @Override
@@ -61,8 +59,4 @@ public class RepoListActivity extends ListActivity {
         //TODO restore current position in list
     }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-    }
 }

@@ -26,9 +26,10 @@ public class GitHubPingAsyncTask extends AsyncTask<String, String, String> {
 
     @Override
     protected String doInBackground(String... objects) {
+        HttpURLConnection conn = null;
         try {
             URL url = new URL("https://api.github.com/");
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn = (HttpURLConnection) url.openConnection();
             conn.setReadTimeout(10000);
             conn.setConnectTimeout(15000);
             conn.setRequestMethod("GET");
@@ -42,10 +43,13 @@ public class GitHubPingAsyncTask extends AsyncTask<String, String, String> {
         } catch (IOException e) {
             e.printStackTrace();
             return e.getMessage();
+        } finally {
+            if (conn != null){
+                conn.disconnect();
+            }
         }
     }
 
-    // Reads an InputStream and converts it to a String.
     public String readIt(InputStream stream, int len) throws IOException {
         Reader reader = new InputStreamReader(stream, "UTF-8");
         char[] buffer = new char[len];

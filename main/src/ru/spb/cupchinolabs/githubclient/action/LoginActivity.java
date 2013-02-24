@@ -9,9 +9,10 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import ru.spb.cupchinolabs.githubclient.ApplicationContext;
 import ru.spb.cupchinolabs.githubclient.R;
-import ru.spb.cupchinolabs.githubclient.github.GitHubEmulator;
+import ru.spb.cupchinolabs.githubclient.github.GitHubAuthenticateAsyncTask;
 import ru.spb.cupchinolabs.githubclient.github.GitHubPingAsyncTask;
 import ru.spb.cupchinolabs.githubclient.model.User;
 
@@ -60,35 +61,32 @@ public class LoginActivity extends Activity {
     public void login(View view) {
 
         //TODO disable editviews and button
-        //TODO progress indication
 
-        String name = findViewById(R.id.login_name).toString();
-        String password = findViewById(R.id.login_password).toString();
+        String name = ((EditText)findViewById(R.id.login_name)).getText().toString();
+        String password = ((EditText) findViewById(R.id.login_password)).getText().toString();
 
         //TODO validate name and password: non-empty or if empty button should be disabled
 
         User user = new User(name, password);
+        ApplicationContext.getInstance().setUser(user);
 
         //TODO progress bar on
-        boolean authenticationPassed = GitHubEmulator.authenticate(user);
-        //TODO progress bar off
+        new GitHubAuthenticateAsyncTask(this, name, password).execute();
+    }
 
-        if (authenticationPassed) {
-            ApplicationContext.getInstance().setUser(user);
-            GitHubEmulator.populateRepoListForUser(user);
-            Intent intent = new Intent(this, RepoListActivity.class);
-            startActivity(intent);
-        } else {
-            showDialogWithErrorMessageAndOkButton(R.string.login_auth_failed_message, null);
-        }
+    public void onGitHubAuthenticateSuccess() {
+        //TODO progress bar off
+        Intent intent = new Intent(this, RepoListActivity.class);
+        startActivity(intent);
+    }
+
+    public void onGitHubAuthenticationError(String errorMessage) {
+        //TODO progress bar off
+        showDialogWithErrorMessageAndOkButton(R.string.login_github_autherntication_error, errorMessage);
     }
 
     public void onGitHubPingError(String errorMessage) {
         showDialogWithErrorMessageAndOkButton(R.string.login_github_unavailable, errorMessage);
-    }
-
-    public void onGitHubAuthenticationError(String errorMessage) {
-        showDialogWithErrorMessageAndOkButton(R.string.login_github_autherntication_error, errorMessage);
     }
 
     private void showDialogWithErrorMessageAndOkButton(int messageCode, String errorMessage) {
