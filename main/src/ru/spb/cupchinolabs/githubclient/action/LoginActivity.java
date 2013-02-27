@@ -88,18 +88,15 @@ public class LoginActivity extends Activity {
         User user = new User(name, password);
         ApplicationContext.getInstance().setUser(user);
 
-        //TODO progress bar on
         new GitHubAuthenticateAsyncTask(this, name, password).execute();
     }
 
     public void onGitHubAuthenticateSuccess() {
-        //TODO progress bar off
         Intent intent = new Intent(this, RepoListActivity.class);
         startActivity(intent);
     }
 
     public void onGitHubAuthenticationError(String errorMessage) {
-        //TODO progress bar off
         showDialogWithErrorMessageAndOkButton(R.string.login_github_autherntication_error, errorMessage);
     }
 

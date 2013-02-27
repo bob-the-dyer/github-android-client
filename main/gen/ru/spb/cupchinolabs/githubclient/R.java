@@ -19,6 +19,7 @@ public final class R {
         public static final int repolist=0x7f020001;
     }
     public static final class string {
+        public static final int login_authentication_progress_message=0x7f03000c;
         public static final int login_button_name=0x7f030003;
         public static final int login_errordialog_ok=0x7f030006;
         public static final int login_github_autherntication_error=0x7f030009;

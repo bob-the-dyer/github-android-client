@@ -27,7 +27,7 @@ public class RepoListActivity extends ListActivity {
 
         List<Repository> repoList = ApplicationContext.getInstance().getUser().getRepoList();
 
-        //TODO rework for async loading, cursor?
+        //TODO rework for async loading during this activity with cursor?
         setListAdapter(new ArrayAdapter<>(
                 this,
                 android.R.layout.simple_list_item_1,

@@ -12,4 +12,5 @@
     <string name="login_github_autherntication_error">Authentication failed. Fix user name or password and try again.</string>
     <string name="login_username_saved">username</string>
     <string name="login_password_saved">password</string>
+    <string name="login_authentication_progress_message">Authenticating</string>
 </resources>

@@ -1,6 +1,8 @@
 package ru.spb.cupchinolabs.githubclient.github;
 
+import android.app.ProgressDialog;
 import android.os.AsyncTask;
+import ru.spb.cupchinolabs.githubclient.R;
 import ru.spb.cupchinolabs.githubclient.action.LoginActivity;
 
 import java.io.IOException;
@@ -16,16 +18,17 @@ import java.net.URL;
  * Date: 24.02.13
  * Time: 19:01
  */
-public class GitHubPingAsyncTask extends AsyncTask<String, String, String> {
+public class GitHubPingAsyncTask extends AsyncTask<Void, Void, String> {
 
     private LoginActivity loginActivity;
+    private ProgressDialog pbarDialog;
 
     public GitHubPingAsyncTask(LoginActivity loginActivity) {
         this.loginActivity = loginActivity;
     }
 
     @Override
-    protected String doInBackground(String... objects) {
+    protected String doInBackground(Void... objects) {
         HttpURLConnection conn = null;
         try {
             URL url = new URL("https://api.github.com/");
@@ -58,7 +61,23 @@ public class GitHubPingAsyncTask extends AsyncTask<String, String, String> {
     }
 
     @Override
+    protected void onPreExecute() {
+        super.onPreExecute();
+        //TODO wait ~2 secs before showing a dialog
+        pbarDialog = new ProgressDialog(loginActivity);
+        pbarDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+        pbarDialog.setMessage(loginActivity.getString(R.string.login_authentication_progress_message));
+        pbarDialog.setCancelable(false);
+        pbarDialog.setIndeterminate(true);
+        pbarDialog.show();
+
+    }
+
+    @Override
     protected void onPostExecute(String errorMessage) {
+
+        pbarDialog.dismiss();
+
         if (!"200".equals(errorMessage)){
             loginActivity.onGitHubPingError(errorMessage);
         }

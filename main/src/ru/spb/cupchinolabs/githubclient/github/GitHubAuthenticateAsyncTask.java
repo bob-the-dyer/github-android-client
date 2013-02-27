@@ -1,11 +1,13 @@
 package ru.spb.cupchinolabs.githubclient.github;
 
+import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.util.Base64;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import ru.spb.cupchinolabs.githubclient.ApplicationContext;
+import ru.spb.cupchinolabs.githubclient.R;
 import ru.spb.cupchinolabs.githubclient.action.LoginActivity;
 import ru.spb.cupchinolabs.githubclient.model.Repository;
 
@@ -23,11 +25,12 @@ import java.util.List;
  * Date: 24.02.13
  * Time: 19:48
  */
-public class GitHubAuthenticateAsyncTask extends AsyncTask<String, String, String> {
+public class GitHubAuthenticateAsyncTask extends AsyncTask<Void, Void, String> {
 
     private final LoginActivity loginActivity;
     private final String name;
     private final String password;
+    private ProgressDialog pbarDialog;
 
     public GitHubAuthenticateAsyncTask(LoginActivity loginActivity, String name, String password) {
         this.loginActivity = loginActivity;
@@ -36,7 +39,7 @@ public class GitHubAuthenticateAsyncTask extends AsyncTask<String, String, Strin
     }
 
     @Override
-    protected String doInBackground(String ... objects) {
+    protected String doInBackground(Void ... objects) {
         HttpURLConnection conn = null;
         try {
             URL url = new URL("https://api.github.com/users/" + name + "/repos");
@@ -92,7 +95,23 @@ public class GitHubAuthenticateAsyncTask extends AsyncTask<String, String, Strin
     }
 
     @Override
+    protected void onPreExecute() {
+        super.onPreExecute();
+
+        //TODO wait ~2 secs before showing a dialog
+        pbarDialog = new ProgressDialog(loginActivity);
+        pbarDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+        pbarDialog.setMessage(loginActivity.getString(R.string.login_authentication_progress_message));
+        pbarDialog.setCancelable(false);
+        pbarDialog.setIndeterminate(true);
+        pbarDialog.show();
+    }
+
+    @Override
     protected void onPostExecute(String errorMessage) {
+
+        pbarDialog.dismiss();
+
         if (!"200".equals(errorMessage)){
             loginActivity.onGitHubAuthenticationError(errorMessage);
         } else {
