@@ -35,7 +35,7 @@ public class RepoListActivity extends ListActivity {
 
         getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-                Toast.makeText(RepoListActivity.this, "" + position, Toast.LENGTH_SHORT).show();
+                Toast.makeText(RepoListActivity.this, "" + position + ": repository details activity is not implemented yet ... ", Toast.LENGTH_LONG).show();
             }
         });
     }

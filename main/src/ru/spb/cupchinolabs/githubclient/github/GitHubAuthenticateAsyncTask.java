@@ -2,16 +2,20 @@ package ru.spb.cupchinolabs.githubclient.github;
 
 import android.os.AsyncTask;
 import android.util.Base64;
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import ru.spb.cupchinolabs.githubclient.ApplicationContext;
 import ru.spb.cupchinolabs.githubclient.action.LoginActivity;
+import ru.spb.cupchinolabs.githubclient.model.Repository;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -35,7 +39,7 @@ public class GitHubAuthenticateAsyncTask extends AsyncTask<String, String, Strin
     protected String doInBackground(String ... objects) {
         HttpURLConnection conn = null;
         try {
-            //TODO remove hardcode
+            //TODO remove hardcode after save login/pass is ready
             String name = "bob-the-dyer";
             String password = "focus1556!!";
 
@@ -60,17 +64,30 @@ public class GitHubAuthenticateAsyncTask extends AsyncTask<String, String, Strin
             while ((line = reader.readLine()) != null) {
                 sb.append(line + System.getProperty("line.separator"));
             }
-            //TODO next
-//            JSONObject json = new JSONObject(sb.toString());
-            GitHubEmulator.populateRepoListForUser(
-                    ApplicationContext.getInstance().getUser());
+
+            JSONArray jsonRepos = new JSONArray(sb.toString());
+            List<Repository> repos = new ArrayList<>();
+
+            for (int i = 0; i < jsonRepos.length(); i++) {
+                JSONObject jsonRepo = (JSONObject) jsonRepos.get(i);
+                Repository repository = new Repository();
+                repository.setName((String) jsonRepo.get("name"));
+                repository.setAuthorName(name);
+                repository.setDescription((String) jsonRepo.get("description"));
+                repository.setWatchersCount((Integer) jsonRepo.get("watchers_count"));
+                repository.setForksCount((Integer) jsonRepo.get("forks_count"));
+                repos.add(repository);
+            }
+
+            ApplicationContext.getInstance().getUser().setRepoList(repos);
+
             return String.valueOf(response);
         } catch (IOException e) {
             e.printStackTrace();
             return e.getMessage();
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//            throw new IllegalStateException("github replied with incorrect json", e);
+        } catch (JSONException e) {
+            e.printStackTrace();
+            throw new IllegalStateException("github replied with incorrect json", e);
         } finally {
             if (conn != null){
                 conn.disconnect();
