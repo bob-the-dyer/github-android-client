@@ -98,6 +98,8 @@ public class GitHubAuthenticateAsyncTask extends AsyncTask<Void, Void, String> {
     protected void onPreExecute() {
         super.onPreExecute();
 
+        //TODO block orientation change
+
         //TODO wait ~2 secs before showing a dialog
         pbarDialog = new ProgressDialog(loginActivity);
         pbarDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
@@ -111,6 +113,8 @@ public class GitHubAuthenticateAsyncTask extends AsyncTask<Void, Void, String> {
     protected void onPostExecute(String errorMessage) {
 
         pbarDialog.dismiss();
+
+        //TODO unblock orientation change
 
         if (!"200".equals(errorMessage)){
             loginActivity.onGitHubAuthenticationError(errorMessage);
