@@ -15,7 +15,7 @@ import java.net.URL;
  * Date: 26.02.13
  * Time: 11:01
  */
-public class GitAuthTool {
+public class GitHubAuthTool {
 
     public static void main(String[] args) {
 

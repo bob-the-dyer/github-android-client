@@ -16,12 +16,11 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3460d66c-7665-4953-9e62-fe3364911ae9" name="Default" comment=" GitHubAuthenticateAsyncTask was added">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/src/ru/spb/cupchinolabs/githubclient/github/GitAuthTool.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/tools.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="3460d66c-7665-4953-9e62-fe3364911ae9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/REQUIREMENTS.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/SOLUTION.txt" />
+      <change type="MOVED" beforePath="C:\Users\VladimirK\IdeaProjects\github-android-client\tools\src\ru\spb\cupchinolabs\githubclient\github\GitAuthTool.java" afterPath="$PROJECT_DIR$/tools/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthTool.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthenticateAsyncTask.java" afterPath="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthenticateAsyncTask.java" />
     </list>
     <ignored path="github-android-client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,20 +39,7 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/tools/src/ru/spb/cupchinolabs/githubclient/github/GitAuthTool.java" line="32" class="ru.spb.cupchinolabs.githubclient.github.GitAuthTool" package="ru.spb.cupchinolabs.githubclient.github">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthenticateAsyncTask.java" line="63" class="ru.spb.cupchinolabs.githubclient.github.GitHubAuthenticateAsyncTask" package="ru.spb.cupchinolabs.githubclient.github">
+      <breakpoint url="file://$PROJECT_DIR$/tools/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthTool.java" line="32" class="ru.spb.cupchinolabs.githubclient.github.GitAuthTool" package="ru.spb.cupchinolabs.githubclient.github">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -138,28 +124,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GitHubAuthenticateAsyncTask.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GitHubAuthenticateAsyncTask.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthenticateAsyncTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="49" selection-start="1187" selection-end="1187" vertical-scroll-proportion="1.4875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Handler.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/android/os/Handler.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="0" selection-start="3426" selection-end="3426" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AsyncTask.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/android/os/AsyncTask.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="69" column="119" selection-start="2566" selection-end="2566" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -185,10 +153,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GitAuthTool.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/src/ru/spb/cupchinolabs/githubclient/github/GitAuthTool.java">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="68" selection-start="1215" selection-end="1215" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="REQUIREMENTS.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/REQUIREMENTS.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="0" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SOLUTION.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main/SOLUTION.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="69" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.82175225">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GitHubAuthTool.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthTool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="66" selection-start="1218" selection-end="1218" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -218,9 +213,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/model/User.java" />
-        <option value="$PROJECT_DIR$/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/GitHub.java" />
         <option value="$PROJECT_DIR$/main/gen/ru/spb/cupchinolabs/githubclient/R.java" />
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/RepoListAdapter.java" />
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/model/Repository.java" />
@@ -234,14 +226,17 @@
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubEmulator.java" />
         <option value="$PROJECT_DIR$/tools/src/ru/spb/cupchinolabs/githubclient/github/GitAuthTool.java" />
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthenticateAsyncTask.java" />
+        <option value="$PROJECT_DIR$/tools/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthTool.java" />
+        <option value="$PROJECT_DIR$/main/REQUIREMENTS.txt" />
+        <option value="$PROJECT_DIR$/main/SOLUTION.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="x" value="-1688" />
+    <option name="y" value="-290" />
+    <option name="width" value="1696" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -293,25 +288,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="github-android-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="github" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -366,7 +343,7 @@
       <recent name="ru.spb.cupchinolabs.githubclient.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GitAuthTool">
+  <component name="RunManager" selected="Application.GitHubAuthTool">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -502,8 +479,8 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="GitAuthTool" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="ru.spb.cupchinolabs.githubclient.github.GitAuthTool" />
+    <configuration default="false" name="GitHubAuthTool" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ru.spb.cupchinolabs.githubclient.github.GitHubAuthTool" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -526,7 +503,7 @@
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Android Application.ru.spb.cupchinolabs.githubclient" />
-      <item index="1" class="java.lang.String" itemvalue="Application.GitAuthTool" />
+      <item index="1" class="java.lang.String" itemvalue="Application.GitHubAuthTool" />
     </list>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
@@ -603,11 +580,15 @@
       <created>1361732643375</created>
       <updated>1361732643375</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary=" - auth problem fixed&#10; - tool module was created">
+      <created>1361908627767</created>
+      <updated>1361908627767</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-1688" y="-290" width="1696" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -616,7 +597,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4150641" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2196468" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -625,7 +606,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2189394" sideWeight="0.5849359" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30844554" sideWeight="0.7803532" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3221154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -672,7 +653,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value=" GitHubAuthenticateAsyncTask was added" />
+    <option name="LAST_COMMIT_MESSAGE" value=" - auth problem fixed&#10; - tool module was created" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -695,6 +676,7 @@
     <MESSAGE value="GitHub Ping on app start" />
     <MESSAGE value="GitHubPingAsyncTask was extracted + refactored" />
     <MESSAGE value=" GitHubAuthenticateAsyncTask was added" />
+    <MESSAGE value=" - auth problem fixed&#10; - tool module was created" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -704,21 +686,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="51" selection-start="858" selection-end="858" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/gen/ru/spb/cupchinolabs/githubclient/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="32" selection-start="626" selection-end="626" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/res/layout/repolist.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="23" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="81" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0" />
@@ -766,15 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubEmulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="96" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/android/os/Handler.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="77" column="0" selection-start="3426" selection-end="3426" vertical-scroll-proportion="0.0">
@@ -796,18 +754,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/src/ru/spb/cupchinolabs/githubclient/github/GitAuthTool.java">
+    <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthenticateAsyncTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="68" selection-start="1215" selection-end="1215" vertical-scroll-proportion="0.0">
+        <state line="69" column="119" selection-start="2566" selection-end="2566" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="66" selection-start="1218" selection-end="1218" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthenticateAsyncTask.java">
+    <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubEmulator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="49" selection-start="1187" selection-end="1187" vertical-scroll-proportion="1.4875">
+        <state line="26" column="96" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/REQUIREMENTS.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/SOLUTION.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="69" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.82175225">
           <folding />
         </state>
       </provider>
