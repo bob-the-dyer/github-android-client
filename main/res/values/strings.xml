@@ -8,10 +8,8 @@
     <string name="title_repolistactivity">List of repositories</string>
     <string name="login_errordialog_ok">OK</string>
     <string name="login_network_unavailable">Network is currently unavailable. Please check whether Wi-Fi or mobile data access are enabled in device\'s Settings and try again. Application will now exit.</string>
-    <string name="login_github_unavailable">GitHub is currently unavailable. Please try again later.</string>
     <string name="login_github_autherntication_error">Authentication failed. Fix user name or password and try again.</string>
     <string name="login_username_saved">username</string>
     <string name="login_password_saved">password</string>
-    <string name="login_githubping_progress_message">Establishing a connection with GitHub ... </string>
     <string name="login_authentication_progress_message">Authenticating and retrieving the list of repositories ... </string>
 </resources>

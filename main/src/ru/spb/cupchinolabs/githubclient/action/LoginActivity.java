@@ -14,13 +14,9 @@ import android.widget.EditText;
 import ru.spb.cupchinolabs.githubclient.ApplicationContext;
 import ru.spb.cupchinolabs.githubclient.R;
 import ru.spb.cupchinolabs.githubclient.github.GitHubAuthenticateAsyncTask;
-import ru.spb.cupchinolabs.githubclient.github.GitHubPingAsyncTask;
 import ru.spb.cupchinolabs.githubclient.model.User;
 
 public class LoginActivity extends Activity {
-
-    public final static String LOGIN_NAME = "ru.spb.cupchinolabs.githubclient.login.name";
-    public final static String LOGIN_PASSWORD = "ru.spb.cupchinolabs.githubclient.login.password";
 
     /**
      * Called when the activity is first created.
@@ -36,8 +32,8 @@ public class LoginActivity extends Activity {
         String savedUsername = sharedPref.getString(getString(R.string.login_username_saved), "");
         String savedPassword = sharedPref.getString(getString(R.string.login_password_saved), ""); //TODO decript password
 
-        ((EditText)findViewById(R.id.login_name)).setText(savedUsername);
-        ((EditText)findViewById(R.id.login_password)).setText(savedPassword);
+        ((EditText) findViewById(R.id.login_name)).setText(savedUsername);
+        ((EditText) findViewById(R.id.login_password)).setText(savedPassword);
     }
 
     @Override
@@ -45,7 +41,7 @@ public class LoginActivity extends Activity {
         super.onPause();
 
         //save user's info here
-        String name = ((EditText)findViewById(R.id.login_name)).getText().toString();
+        String name = ((EditText) findViewById(R.id.login_name)).getText().toString();
         String password = ((EditText) findViewById(R.id.login_password)).getText().toString();
 
         SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
@@ -61,9 +57,7 @@ public class LoginActivity extends Activity {
 
         ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
-        if (networkInfo != null && networkInfo.isConnected()) {
-            new GitHubPingAsyncTask(this).execute();
-        } else {
+        if (!(networkInfo != null && networkInfo.isConnected())) {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setPositiveButton(R.string.login_errordialog_ok, new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
@@ -78,17 +72,16 @@ public class LoginActivity extends Activity {
 
     public void login(View view) {
 
-        //TODO disable editviews and button
-
-        String name = ((EditText)findViewById(R.id.login_name)).getText().toString();
+        String name = ((EditText) findViewById(R.id.login_name)).getText().toString();
         String password = ((EditText) findViewById(R.id.login_password)).getText().toString();
 
         //TODO validate name and password: non-empty or if empty button should be disabled
 
-        User user = new User(name, password);
-        ApplicationContext.getInstance().setUser(user);
+        ApplicationContext.getInstance()
+                .setUser(new User(name, password));
 
-        new GitHubAuthenticateAsyncTask(this, name, password).execute();
+        new GitHubAuthenticateAsyncTask(this, name, password)
+                .execute();
     }
 
     public void onGitHubAuthenticateSuccess() {
@@ -100,17 +93,13 @@ public class LoginActivity extends Activity {
         showDialogWithErrorMessageAndOkButton(R.string.login_github_autherntication_error, errorMessage);
     }
 
-    public void onGitHubPingError(String errorMessage) {
-        showDialogWithErrorMessageAndOkButton(R.string.login_github_unavailable, errorMessage);
-    }
-
     private void showDialogWithErrorMessageAndOkButton(int messageCode, String errorMessage) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setPositiveButton(R.string.login_errordialog_ok, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
             }
         });
-        builder.setMessage(getString(messageCode) + (errorMessage == null ? "" : "\n" + errorMessage));
+        builder.setMessage(getString(messageCode) + (errorMessage == null ? "" : "\n(" + errorMessage + ")"));
         AlertDialog dialog = builder.create();
         dialog.show();
     }
