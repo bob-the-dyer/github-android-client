@@ -39,21 +39,17 @@ public class GitHubAuthenticateAsyncTask extends AsyncTask<String, String, Strin
     protected String doInBackground(String ... objects) {
         HttpURLConnection conn = null;
         try {
-            //TODO remove hardcode after save login/pass is ready
-            String name = "bob-the-dyer";
-            String password = "focus1556!!";
-
             URL url = new URL("https://api.github.com/users/" + name + "/repos");
             conn = (HttpURLConnection) url.openConnection();
             conn.setReadTimeout(10000);
             conn.setConnectTimeout(15000);
             conn.setRequestMethod("GET");
             conn.setDoInput(true);
-            conn.setRequestProperty("Authorization", "Basic " + Base64.encodeToString((name + ":" + password).getBytes(),
-                    Base64.DEFAULT));
+            conn.setRequestProperty("Authorization", "Basic " + Base64.encodeToString((name + ":" + password).getBytes(), Base64.DEFAULT));
             conn.setRequestProperty("Content-Type", "application/json");
             conn.setRequestProperty("Accept", "application/json");
             conn.connect();
+
             int response = conn.getResponseCode();
 
             BufferedReader reader = new BufferedReader(
@@ -87,7 +83,7 @@ public class GitHubAuthenticateAsyncTask extends AsyncTask<String, String, Strin
             return e.getMessage();
         } catch (JSONException e) {
             e.printStackTrace();
-            throw new IllegalStateException("github replied with incorrect json", e);
+            return "github replied with incorrect json -> " + e.getMessage();
         } finally {
             if (conn != null){
                 conn.disconnect();
@@ -100,7 +96,6 @@ public class GitHubAuthenticateAsyncTask extends AsyncTask<String, String, Strin
         if (!"200".equals(errorMessage)){
             loginActivity.onGitHubAuthenticationError(errorMessage);
         } else {
-            //TODO store auth data
             loginActivity.onGitHubAuthenticateSuccess();
         }
     }

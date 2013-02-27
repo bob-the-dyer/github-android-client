@@ -27,6 +27,8 @@ public final class R {
         public static final int login_name_hint=0x7f030002;
         public static final int login_network_unavailable=0x7f030007;
         public static final int login_password_hint=0x7f030004;
+        public static final int login_password_saved=0x7f03000b;
+        public static final int login_username_saved=0x7f03000a;
         public static final int title_loginactivity=0x7f030000;
         public static final int title_repolistactivity=0x7f030005;
     }

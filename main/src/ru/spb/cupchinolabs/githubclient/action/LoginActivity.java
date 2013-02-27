@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -28,13 +29,30 @@ public class LoginActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-        //TODO if name and password are found in storage then populate fields with the values
+
+        //if name and password are found in storage then populate fields with the values
+        SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
+
+        String savedUsername = sharedPref.getString(getString(R.string.login_username_saved), "");
+        String savedPassword = sharedPref.getString(getString(R.string.login_password_saved), ""); //TODO decript password
+
+        ((EditText)findViewById(R.id.login_name)).setText(savedUsername);
+        ((EditText)findViewById(R.id.login_password)).setText(savedPassword);
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        //TODO save user's info here
+
+        //save user's info here
+        String name = ((EditText)findViewById(R.id.login_name)).getText().toString();
+        String password = ((EditText) findViewById(R.id.login_password)).getText().toString();
+
+        SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putString(getString(R.string.login_username_saved), name);
+        editor.putString(getString(R.string.login_password_saved), password); //TODO encript password
+        editor.commit();
     }
 
     @Override
