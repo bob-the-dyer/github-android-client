@@ -12,18 +12,13 @@
     </option>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="ru.spb" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3460d66c-7665-4953-9e62-fe3364911ae9" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\VladimirK\IdeaProjects\github-android-client\main\src\ru\spb\cupchinolabs\githubclient\github\GitHubEmulator.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/gen/ru/spb/cupchinolabs/githubclient/R.java" afterPath="$PROJECT_DIR$/main/gen/ru/spb/cupchinolabs/githubclient/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/LoginActivity.java" afterPath="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/RepoListActivity.java" afterPath="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/RepoListActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthenticateAsyncTask.java" afterPath="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthenticateAsyncTask.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubPingAsyncTask.java" afterPath="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubPingAsyncTask.java" />
     </list>
     <ignored path="github-android-client.iws" />
@@ -100,7 +95,7 @@
       <file leaf-file-name="LoginActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="27" selection-start="3703" selection-end="3703" vertical-scroll-proportion="0.0">
+            <state line="64" column="51" selection-start="2709" selection-end="2709" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,10 +103,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="strings.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="71" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0">
+            <state line="15" column="0" selection-start="1155" selection-end="1155" vertical-scroll-proportion="0.62653565">
               <folding />
             </state>
           </provider>
@@ -160,10 +155,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GitHubPingAsyncTask.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GitHubPingAsyncTask.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubPingAsyncTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="21" selection-start="2008" selection-end="2008" vertical-scroll-proportion="2.2261906">
+            <state line="45" column="36" selection-start="1439" selection-end="1459" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -195,9 +190,9 @@
         <option value="$PROJECT_DIR$/main/SOLUTION.txt" />
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/RepoListActivity.java" />
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthenticateAsyncTask.java" />
         <option value="$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubPingAsyncTask.java" />
+        <option value="$PROJECT_DIR$/main/res/values/strings.xml" />
       </list>
     </option>
   </component>
@@ -659,7 +654,11 @@
       <created>1361940445561</created>
       <updated>1361940445561</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="adding progress bar on github ping and authentication">
+      <created>1361985803600</created>
+      <updated>1361985803600</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -672,17 +671,17 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21901709" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21794872" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32692307" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55982906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33173078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38560605" sideWeight="0.7451923" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25480768" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25480768" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Android Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -728,7 +727,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="saving login and password as a preference" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding progress bar on github ping and authentication" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -755,6 +754,7 @@
     <MESSAGE value="adding some docs" />
     <MESSAGE value="retrieving real list of repos" />
     <MESSAGE value="saving login and password as a preference" />
+    <MESSAGE value="adding progress bar on github ping and authentication" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -822,15 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="27" selection-start="3703" selection-end="3703" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/ApplicationContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="19" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0">
@@ -862,13 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="71" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubAuthenticateAsyncTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="100" column="21" selection-start="3636" selection-end="3636" vertical-scroll-proportion="0.0">
@@ -878,9 +862,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/action/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="51" selection-start="2709" selection-end="2709" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main/src/ru/spb/cupchinolabs/githubclient/github/GitHubPingAsyncTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="21" selection-start="2008" selection-end="2008" vertical-scroll-proportion="2.2261906">
+        <state line="45" column="36" selection-start="1439" selection-end="1459" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="1155" selection-end="1155" vertical-scroll-proportion="0.62653565">
           <folding />
         </state>
       </provider>

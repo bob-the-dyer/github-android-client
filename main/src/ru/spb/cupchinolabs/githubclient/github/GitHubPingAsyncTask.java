@@ -40,8 +40,6 @@ public class GitHubPingAsyncTask extends AsyncTask<Void, Void, String> {
             conn.connect();
             int response = conn.getResponseCode();
             System.out.println("The response is: " + response);
-            InputStream is = conn.getInputStream();
-            System.out.println(readIt(is, 500));
             return String.valueOf(response);
         } catch (IOException e) {
             e.printStackTrace();
@@ -53,20 +51,13 @@ public class GitHubPingAsyncTask extends AsyncTask<Void, Void, String> {
         }
     }
 
-    public String readIt(InputStream stream, int len) throws IOException {
-        Reader reader = new InputStreamReader(stream, "UTF-8");
-        char[] buffer = new char[len];
-        reader.read(buffer);
-        return new String(buffer);
-    }
-
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
         //TODO wait ~2 secs before showing a dialog
         pbarDialog = new ProgressDialog(loginActivity);
         pbarDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-        pbarDialog.setMessage(loginActivity.getString(R.string.login_authentication_progress_message));
+        pbarDialog.setMessage(loginActivity.getString(R.string.login_githubping_progress_message));
         pbarDialog.setCancelable(false);
         pbarDialog.setIndeterminate(true);
         pbarDialog.show();
