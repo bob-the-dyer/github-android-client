@@ -27,7 +27,7 @@ import java.util.List;
  */
 public class GitHubAuthenticateAsyncTask extends AsyncTask<Void, Void, String> {
 
-    private final LoginActivity loginActivity;
+    private LoginActivity loginActivity;
     private final String name;
     private final String password;
     private ProgressDialog pbarDialog;
@@ -121,6 +121,9 @@ public class GitHubAuthenticateAsyncTask extends AsyncTask<Void, Void, String> {
         } else {
             loginActivity.onGitHubAuthenticateSuccess();
         }
+
+        loginActivity = null;
+        pbarDialog = null;
     }
 }
 
