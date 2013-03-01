@@ -53,6 +53,8 @@ public class GitHubAuthenticateAsyncTask extends AsyncTask<Void, Void, String> {
             conn.setRequestProperty("Accept", "application/json");
             conn.connect();
 
+            //TODO bug - doesn't work on Samsung Galaxy Ace, android 2.3.6, returns 400 and 500.html
+
             int response = conn.getResponseCode();
 
             BufferedReader reader = new BufferedReader(
