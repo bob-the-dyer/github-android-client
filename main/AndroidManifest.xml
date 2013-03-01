@@ -19,5 +19,8 @@
         <activity android:name=".action.RepoListActivity"
                   android:label="@string/title_repolistactivity">
         </activity>
+        <activity android:name=".action.RepoDetailsActivity"
+                  android:label="@string/title_repodetailsactivity">
+        </activity>
     </application>
 </manifest>

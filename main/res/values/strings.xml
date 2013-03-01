@@ -12,4 +12,6 @@
     <string name="login_username_saved">username</string>
     <string name="login_password_saved">password</string>
     <string name="login_authentication_progress_message">Authenticating and retrieving the list of repositories ... </string>
+    <string name="title_repodetailsactivity">Details</string>
+    <string name="repodetails_not_implemented">Sorry, showing details is not implemented yet for repo with index</string>
 </resources>

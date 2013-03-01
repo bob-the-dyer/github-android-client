@@ -14,9 +14,7 @@ public class Repository {
 
     private String description;
 
-    private String authorName;
-
-    //TODO author's avatar
+    private Author author;
 
     private int forksCount;
 
@@ -48,14 +46,6 @@ public class Repository {
         this.description = description;
     }
 
-    public String getAuthorName() {
-        return authorName;
-    }
-
-    public void setAuthorName(String authorName) {
-        this.authorName = authorName;
-    }
-
     public int getForksCount() {
         return forksCount;
     }
@@ -70,6 +60,14 @@ public class Repository {
 
     public void setCommits(List<Commit> commits) {
         this.commits = commits;
+    }
+
+    public Author getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(Author author) {
+        this.author = author;
     }
 
     @Override

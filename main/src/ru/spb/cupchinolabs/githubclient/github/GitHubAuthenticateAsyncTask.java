@@ -71,7 +71,6 @@ public class GitHubAuthenticateAsyncTask extends AsyncTask<Void, Void, String> {
                 JSONObject jsonRepo = (JSONObject) jsonRepos.get(i);
                 Repository repository = new Repository();
                 repository.setName((String) jsonRepo.get("name"));
-                repository.setAuthorName(name);
                 repository.setDescription((String) jsonRepo.get("description"));
                 repository.setWatchersCount((Integer) jsonRepo.get("watchers_count"));
                 repository.setForksCount((Integer) jsonRepo.get("forks_count"));

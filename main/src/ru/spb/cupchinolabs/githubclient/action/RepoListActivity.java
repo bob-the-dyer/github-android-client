@@ -1,6 +1,7 @@
 package ru.spb.cupchinolabs.githubclient.action;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -19,6 +20,8 @@ import java.util.List;
  */
 public class RepoListActivity extends ListActivity {
 
+    public static final String REPO_INDEX = "ru.spb.cupchinolabs.githubclient.REPO_INDEX";
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (savedInstanceState != null){
@@ -35,10 +38,9 @@ public class RepoListActivity extends ListActivity {
 
         getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-                //TODO move to RepositoryDetailsActivity
-                Toast.makeText(RepoListActivity.this, "Repository details feature is not implemented yet ... ",
-                        Toast.LENGTH_SHORT)
-                        .show();
+                Intent intent = new Intent(RepoListActivity.this, RepoDetailsActivity.class);
+                intent.putExtra(REPO_INDEX, position);
+                startActivity(intent);
             }
         });
     }
