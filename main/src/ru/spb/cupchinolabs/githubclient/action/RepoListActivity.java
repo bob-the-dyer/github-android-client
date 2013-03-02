@@ -58,10 +58,4 @@ public class RepoListActivity extends ListActivity {
         super.onSaveInstanceState(outState);
     }
 
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-        //TODO restore current position in list
-    }
-
 }
